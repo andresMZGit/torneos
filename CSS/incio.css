@@ -1,0 +1,19 @@
+@import url(index.css);
+@import url(menu.css);
+@import url(normativas.css);
+
+body{
+    background-color:#1a1c20;
+    color: #f4f4f4;
+    font-family: 'Baloo Paaji 2', cursive;    
+}
+.logo-torneo img{
+    height: 40px;
+    padding: 7px 15px;
+}
+.logo-torneo-end img{
+    display: none;
+}
+
+
+/*--------------------------NORMATIVAS--------------------------*/

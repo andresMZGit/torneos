@@ -1,0 +1,86 @@
+#menu-check{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 25px;
+    margin: 6px 15px;
+    cursor: pointer;
+}
+header .logotipos-tl{
+    float: left;
+}
+
+.menu-despl{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgba(207, 117, 0, 0.80);
+    width: 70%;
+    height: 100vh;
+
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu-despl .categorias-menu{
+    display: block;
+    color: #1a1c20;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #1a1c20;
+    font-weight: bold;
+}
+
+.menu-despl .categorias-menu:hover{
+    background-color: #1a1c20;
+    color: rgba(207, 117, 0, 0.80);
+}
+
+#menu-check:checked ~ .menu-despl{
+    transform: translateX(0);
+}
+
+@media(min-width:1024px){
+    header{
+        height: 70px;
+    }
+    .menu-despl{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0);
+        float: right;                
+    }
+    .menu-despl ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+    }
+    .menu-despl .categorias-menu{
+        border-bottom: none;
+        font-weight: bold;
+        height: 50px;
+        line-height: 50px;
+        padding: 10px 20px;
+        background-color: #f0a500;
+    }
+    .menu-despl .categorias-menu:hover{
+        color: #1a1c20;
+        background-color: #cf7500;        
+    }
+    header label{
+        display: none;
+    }
+
+    .cont-hd .logo-torneo img{
+        display: none;
+    }
+    .cont-hd .logo-torneo-end img{
+        display: block;
+        width: 100px;
+        padding: 20px 0 0 15px;
+    }
+}
